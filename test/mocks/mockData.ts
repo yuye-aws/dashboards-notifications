@@ -160,19 +160,6 @@ const mockSender: SenderItemType = {
   },
 };
 
-const mockMicrosoftTeams: ChannelItemType = {
-  name: 'Microsoft Teams test channel',
-  description: 'test description',
-  config_type: 'microsoft_teams',
-  is_enabled: false,
-  microsoft_teams: {
-    url: 'https://chimehook',
-  },
-  config_id: 'test-slack',
-  created_time_ms: 1622670451891,
-  last_updated_time_ms: 1622670451891,
-};
-
 const mockSESSender: SESSenderItemType = {
   name: 'test-ses-sender',
   description: 'test description',
@@ -204,8 +191,6 @@ const mockRecipientGroup: RecipientGroupItemType = {
   },
 };
 
-
-
 export const MOCK_DATA = {
   channels: {
     items: [
@@ -215,9 +200,8 @@ export const MOCK_DATA = {
       mockEmailWithSES,
       mockWebhook,
       mockSNS,
-      mockMicrosoftTeams
     ],
-    total: 7
+    total: 6,
   },
   chime: mockChime,
   slack: mockSlack,
@@ -225,7 +209,6 @@ export const MOCK_DATA = {
   emailWithSES: mockEmailWithSES,
   webhook: mockWebhook,
   sns: mockSNS,
-  microsoftTeams: mockMicrosoftTeams,
   sender: mockSender,
   sesSender: mockSESSender,
   senders: {
