@@ -22,7 +22,6 @@ describe('<EmailSenders/> spec', () => {
       availableConfigTypes: [
         'slack',
         'chime',
-        'microsoft_teams',
         'webhook',
         'email',
         'sns',
@@ -50,7 +49,6 @@ describe('<EmailSenders/> spec', () => {
       availableConfigTypes: [
         'slack',
         'chime',
-        'microsoft_teams',
         'webhook',
         'email',
         'sns',
